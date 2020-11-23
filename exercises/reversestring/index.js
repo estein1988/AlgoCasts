@@ -17,6 +17,7 @@ function reverse(str) {
         reversed = character + reversed
     }
     return reversed
+    
 }
 
 function reverse(str){
@@ -24,5 +25,11 @@ function reverse(str){
         return character + reversed
     }, '');
 }
+
+function reverse(str){
+    return str.split('').reduce((rev, char) => char + rev, '')
+}
+
+reverse('asdf')
 
 module.exports = reverse;
