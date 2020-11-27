@@ -9,8 +9,16 @@
 
 function palindrome(str) {
     let reversed = str.split('').reverse().join('')
-    
-    return str === reversed
+
+    return reversed === str
+}
+
+function palindrome(str){
+    let reversed = ''
+    for(let i=0; i<str.length; i++){
+        reversed = str[i] + reversed
+    }
+    return reversed === str
 }
 
 function palindrome(str){

@@ -10,6 +10,15 @@ function reverse(str) {
     return str.split('').reverse().join('')
 }
 
+function reverse(str){
+    let reversed = ''
+    for(let i=0; i < str.length; i++){
+        reversed = str[i] + reversed
+    }
+    debugger
+    return reversed
+}
+
 function reverse(str) {
     let reversed = ''
 
